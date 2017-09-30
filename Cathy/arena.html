@@ -6,80 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Arena Assignment</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-             $('img').hide();
-    
-            // $('#beach').click(function(){
-            //    $('#wrapper').css('background-image',"url('images/beach.jpg')");
-            // });
-            // $('#planet').click(function(){
-            //     $('#wrapper').css('background-image',"url('images/earth.jpg')");
-            // }); 
-            // $('#dojo').click(function(){   
-            //     $('#wrapper').css('background-image',"url('images/dojo.jpg')");
-            // }); 
-            // $('#forest').click(function(){
-            //     $('#wrapper').css('background-image',"url('images/forest.jpg')");
-            // });  
-            // $('#matrix').click(function(){ 
-            //     $('#wrapper').css('background-image',"url('images/matrix.jpg')");
-            // });  
-            // $('#snow').click(function(){
-            //     $('#wrapper').css('background-image',"url('images/snow.jpg')");
-            // });  
-
-            $('#beach').click(function(){
-               $('#beachImg').show();
-               $('#planetImg').hide();
-               $('#dojoImg').hide();
-               $('#forestImg').hide();
-               $('#matrixImg').hide();
-               $('#snowImg').hide();
-            });
-            $('#planet').click(function(){
-               $('#planetImg').show();
-               $('#beachImg').hide();
-               $('#dojoImg').hide();
-               $('#forestImg').hide();
-               $('#matrixImg').hide();
-               $('#snowImg').hide();
-            });
-            $('#dojo').click(function(){
-               $('#dojoImg').show();
-               $('#beachImg').hide();
-               $('#planetImg').hide();
-               $('#forestImg').hide();
-               $('#matrixImg').hide();
-               $('#snowImg').hide();
-            });
-            $('#forest').click(function(){
-               $('#forestImg').show();
-               $('#beachImg').hide();
-               $('#planetImg').hide();
-               $('#dojoImg').hide();
-               $('#matrixImg').hide();
-               $('#snowImg').hide();
-            });
-            $('#matrix').click(function(){
-               $('#matrixImg').show();
-               $('#beachImg').hide();
-               $('#planetImg').hide();
-               $('#dojoImg').hide();
-               $('#forestImg').hide();
-               $('#snowImg').hide();
-            });
-            $('#snow').click(function(){
-               $('#snowImg').show();
-               $('#beachImg').hide();
-               $('#planetImg').hide();
-               $('#dojoImg').hide();
-               $('#forestImg').hide();
-               $('#matrixImg').hide();
-            });
-        });
-    </script>    
-            
+    <script type="text/javascript" src="script.js"></script>  
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -91,14 +18,46 @@
             <img id="forestImg" src="images/forest.jpg" alt="forest">
             <img id="matrixImg" src="images/matrix.jpg" alt="matrix">
             <img id="snowImg" src="images/snow.jpg" alt="snow">
-                <div id ="row">
-                        <h1>Select Arena</h1>
+                <div class ="row">
+                        <h1 class="header">Select Arena</h1>
                         <button id="beach">beach</button>
                         <button id="planet">planet</button>
                         <button id="dojo">dojo</button>
                         <button id="forest">forest</button>
                         <button id="matrix">matrix</button>
                         <button id="snow">snow</button>
+                        <div class="dropdown">
+                                <select id="leftDropdown">
+                                        <option value="player">players</option>
+                                        <option value="raphael">raphael</option>
+                                        <option value="mikey">mikey</option>
+                                        <option value="leo">leo</option>
+                                        <option value="donny">donny</option>
+                                </select>
+
+                                <select id="rightDropdown">
+                                        <option value="select player">players</option>
+                                        <option value="raphael">raphael</option>
+                                        <option value="mikey">mikey</option>
+                                        <option value="leo">leo</option>
+                                        <option value="donny">donny</option>
+                                </select>
+                        </div>
+                        <div class="players">
+                            <div class = "leftplayer">
+                                <img class="pic" alt="leftPlayeraphael" src="images/raphael.png">
+                                <img alt="leftPlayerMikey" src="images/mikey.png">
+                                <img alt="leftPlayerleo" src="images/leo.png">
+                                <img alt="leftPlayerdonny" src="images/donny.png">
+                            </div>
+                            <div id = "rightplayer">
+                                <img class="pic1"alt="leftPlayeraphael" src="images/raphael.png">
+                                <img alt="leftPlayerMikey" src="images/mikey.png">
+                                <img alt="leftPlayerleo" src="images/leo.png">
+                                <img alt="leftPlayerdonny" src="images/donny.png">
+                            </div>
+                        </div>
+                        
                 </div>
                 <!-- end of row -->
         </div>

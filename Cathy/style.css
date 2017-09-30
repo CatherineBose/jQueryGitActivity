@@ -1,52 +1,99 @@
+/* arena css */
 #wrapper{
     background-color: black;
    margin: 0px auto;
-   background-size: 80px 60px;
+   /* background-size: 80px 60px; */
    background-repeat: no-repeat;
    /* width:800px;
    height:10000px; */
-
 }
-
-
 
 #outerbox{
 width: 700px;
 height :800px;
-background-color: purple; 
+/* background-color: purple;  */
 }
 
-#outerbox img {
+/* #outerbox img {
     max-width: 100%;
     max-height: 100%;
-    /* display: none; */
-}
+    /* display: none;} */
 
-#row h1{
+
+.row h1{
     color :orange;
     text-align: center;
 }
 
-#row{
+.row{
     display: block;
     background-color: grey;
     width: 200px;
     margin: 0px auto;
-   
+    position: relative;
+    top: 300px;
+    left: 200px
 }
 
 
-#row button{
+.row button{
     display: inline-block;
     background-color: white;
+    width: 60px;
 }
-/* 
-$('#beach').click(function(){
-    $('#wrapper').css('background-image',"url('images/beach.jpg')");
- });
- $('#planet').click(function(){
-     $('#wrapper').css('background-image',"url('images/earth.jpg')");
- }); 
- $('#matrix').click(function(){ 
-     $('#wrapper').css('background-image',"url('images/matrix.jpg')","background-size: 350px 60px",
-     "background-repeat: no-repeat"); */
+
+.dropdown{
+    display:none;
+}
+
+#leftDropdown{
+   display: inline-block;
+   margin-left: 2px;
+   margin-right: 4px;
+}
+
+#rightDropdown{
+    display: inline-block;
+    margin-left: 16px;
+    margin-right: 27px;
+}
+
+.players{
+    display:block;
+    position: absolute;
+}
+
+.leftPlayer{
+    display: inline-block;
+    position: absolute;
+    top: 600Px;
+}
+
+.leftPlayer img{
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+} 
+
+#rightPlayer{
+    display: inline-block;
+    position: absolute;
+    top: 600Px;
+}
+
+#rightPlayer img{
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+}
+
+
+.pic1{
+    position: relative;
+    bottom: 505px;
+    left:500px;
+}
+
+.players{
+display: block;
+}
