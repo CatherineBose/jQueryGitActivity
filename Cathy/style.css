@@ -2,10 +2,15 @@
 #wrapper{
     background-color: black;
    margin: 0px auto;
-   /* background-size: 80px 60px; */
+   background-size: cover;
    background-repeat: no-repeat;
    /* width:800px;
    height:10000px; */
+}
+
+#wrapper img{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #outerbox{
@@ -28,11 +33,12 @@ height :800px;
 .row{
     display: block;
     background-color: grey;
-    width: 200px;
+    width: 247px;
     margin: 0px auto;
     position: relative;
-    top: 300px;
-    left: 200px
+    top: 342px;
+    left: 261px;
+    height: 142px;
 }
 
 
@@ -40,6 +46,8 @@ height :800px;
     display: inline-block;
     background-color: white;
     width: 60px;
+    margin-left: 16px;
+    margin-top: 8px;
 }
 
 .dropdown{
@@ -63,13 +71,13 @@ height :800px;
     position: absolute;
 }
 
-.leftPlayer{
+#leftPlayer{
     display: inline-block;
     position: absolute;
     top: 600Px;
 }
 
-.leftPlayer img{
+#leftPlayer img{
     display: inline-block;
     width: 200px;
     height: 300px;

@@ -59,11 +59,10 @@ $(document).ready(function () {
     });
     $("#leftDropdown").change(function () {
         var ninja = this.value;
-        console.log("player Value Selected for left player:", ninja);
+        console.log("player Value Selected for right player:", ninja);
         //var ninja = $("#leftDropdown").val();
         $("#leftplayer").html('<img src="images/' + ninja + '.png">');
     });
-
     $("#rightDropdown").change(function () {
         var ninja = this.value;
         console.log("player Value Selected for right player:", ninja);
